@@ -1,0 +1,23 @@
+#logo{
+width: 120px;
+height: 100px;
+float: right;
+}
+#username,#password{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown ;
+    background-color: beige;
+    border: 3px solid brown;
+    border-radius: 10px;
+}
+button{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+#tableEtudiant{
+    width: 40%;
+    text-align: center;
+}
+#tableEtudiant thead tr{
+    background-color: deepskyblue;
+    font-size: 26px;
+}
+#tableEtudiant tbody tr td {
+  font-size: 26px;  
+}
+#fermer{
+  float: right;
+  background-color: tomato;
+}
+input{
+  margin-bottom: 10px;
+}
+#content{
+  padding-right: 90px;
+  padding-left: 90px;
+}

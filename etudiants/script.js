@@ -1,0 +1,13 @@
+window.addEventListener('load',()=>{
+    $.get('http://localhost:8080/SupTechBackEnd/etudiants',(data)=>{
+        etudiants=JSON.parse(data)
+        etudiants.forEach(etudiant=>{
+        id=$('<td>').text(etudiant.id)
+        nom=$('<td>').text(etudiant.nom)
+        age=$('<td>').text(etudiant.age)
+        ligne=$('<tr>')
+        ligne.append(id,nom,age)
+        $('#listeEtudiants').append(ligne)
+       })
+    })
+})
