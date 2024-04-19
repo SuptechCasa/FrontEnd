@@ -28,24 +28,24 @@
           <form>
               <div id="content" class="col">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Id">
+                  <input id="id" type="text" class="form-control" placeholder="Id">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Nom">
+                  <input id="nom" type="text" class="form-control" placeholder="Nom">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Age">
+                  <input id="age" type="text" class="form-control" placeholder="Age">
                 </div>
               </div>
             </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Envoyer</button>
+        <button type="button" class="btn btn-primary" onclick="ajouterEtudiant()" data-dismiss="modal">Envoyer</button>
       </div>
     </div>
   </div>
 </div>
-    
+    <!-- Fin Modal -->
     
     <h1>Liste des étudiants</h1>
     <table id="tableEtudiants" class="table table-hover">
@@ -54,6 +54,7 @@
             <th scope="col">Id</th>
             <th scope="col">Nom</th>
             <th scope="col">Age</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody id="listeEtudiants">
