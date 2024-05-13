@@ -9,7 +9,7 @@ window.addEventListener('load',()=>{
         deleteIMG=$('<img>')
         deleteIMG.attr('src','images/delete.png')
         deleteIMG.attr('class','deleteImage')
-        deleteIMG.attr('onclick','deleteEtudiant(event)')
+        deleteIMG.attr('onclick','openModal(event)')
         deleteTD.append(deleteIMG)
         action=$('<td>')
         ligne=$('<tr>')
@@ -40,6 +40,12 @@ $.post("http://localhost:8080/SupTechBackEnd/etudiants", jsonData,
     "json"
 );
         
+}
+function openModal(e){
+    $("#confirmModal").modal("show")
+    $("#oui").on("click",()=>{
+    deleteEtudiant(e)
+    })
 }
 
 function deleteEtudiant(e) {
